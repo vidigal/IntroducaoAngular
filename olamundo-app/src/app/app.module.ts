@@ -11,12 +11,16 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import { PrincipalComponent } from './principal/principal.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopoComponent,
-    RodapeComponent
+    RodapeComponent,
+    PrincipalComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
