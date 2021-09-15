@@ -1,0 +1,30 @@
+<h1>Exemplos de Interpolação</h1>
+
+<h2>Exemplo 1</h2>
+
+<p>O resultado de 1+1 é igual a {{ 1+1 }}</p>
+<p>O resultado de 10 dividido por 5 é {{ 10/5 }}</p>
+
+<hr>
+<h2>Exemplo 2</h2>
+
+<p>O meu nome que é 'Victor' possui {{ "victor".length }} letras</p>
+<p>O meu nome todo em maiúsculo é {{ "victor".toUpperCase() }}</p>
+<p>O meu nome todo em minusculo é {{ "VICTOR".toLowerCase() }}</p>
+<hr>
+
+<h2>Exemplo 3</h2>
+<p>Meu nome é {{ nome }}</p>
+<hr>
+
+<h2>Exemplo 4</h2>
+<p>Minha idade é {{ getIdade() }}</p>
+<p>Minha idade daqui a 10 anos é {{ getIdade() + 10 }}</p>
+<hr>
+
+<h2>Exemplo 5</h2>
+<p><img src="{{ imageURL }}"></p>
+<p><input type="text" value="{{ textoQualquer }}"></p>
+
+<h2>Exemplo 6</h2>
+<p><input type="text" value="{{ getNumeroAleatorio() }}"></p>

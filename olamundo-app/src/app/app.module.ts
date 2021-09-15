@@ -13,6 +13,8 @@ import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { PrincipalComponent } from './principal/principal.component';
 import { ContatoComponent } from './contato/contato.component';
+import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ContatoComponent } from './contato/contato.component';
     TopoComponent,
     RodapeComponent,
     PrincipalComponent,
-    ContatoComponent
+    ContatoComponent,
+    InterpolacaoComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
