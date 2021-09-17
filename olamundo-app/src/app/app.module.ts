@@ -15,6 +15,9 @@ import { PrincipalComponent } from './principal/principal.component';
 import { ContatoComponent } from './contato/contato.component';
 import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     PrincipalComponent,
     ContatoComponent,
     InterpolacaoComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, TopoComponent, RodapeComponent]

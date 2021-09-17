@@ -1,0 +1,22 @@
+<h1>Exemplos de Two-way data binding</h1>
+
+<h2>"Como <strong>não</strong> fazer"</h2>
+<input type="text" #iptTexto
+  [value]="texto"
+  (input)="iptTextoOnInput(iptTexto.value)">
+
+<p>Você digitou {{ texto }}</p>
+
+<hr>
+
+<h2>"Como fazer"</h2>
+<input type="text" #iptTexto [(ngModel)]="nome">
+
+<p>Você digitou {{ nome }}</p>
+
+<hr>
+
+<h2>Exemplo 3</h2>
+<input type="checkbox" [(ngModel)]="marcado" />
+<p>Seu componente {{ marcado?"está marcado":"não está marcado" }}</p>
+
